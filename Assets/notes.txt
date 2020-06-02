@@ -1,0 +1,37 @@
+Installing git
+    Select components
+        Check all the options but the last one (check daily for git for windows updates)
+
+    Chose the default editor user by Git
+        Select visual studio code as Git's default editor
+
+    Adjusting your PATH environment 
+        Select the last option (Use Git and optional Unix tools from the Command Prompt)
+    
+    Choosing HTTPS transport backend 
+        select the first option (Use the OpenSSL library)
+    
+    Configuring the line ending conversions
+        select the first option (Checkout Windows-style, commit Unix-style line endings)
+
+    Configuring the terminal emulator to use with Git Bash 
+        select the selecton option (Use Windows's default console window)
+    
+    Configuring extra options
+        select all the options 
+
+tessting git version / in CMD (Command)
+    git --version
+
+Configuring git
+    git config --global user.name "Baktash Sana"
+    git config --global user.email "baktash11@tmail.com"
+
+    
+Installing Nodejs 
+INstalling Node PackageManager (terminal VS-Code)
+    npm install lite-server -g 
+    npm install yarn -g 
+    npm lite-server
+
+
