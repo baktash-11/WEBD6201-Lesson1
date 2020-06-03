@@ -35,3 +35,55 @@ INstalling Node PackageManager (terminal VS-Code)
     npm lite-server
 
 
+Adding more meaning with HTML5
+    ...
+    Semantic elements in HTML5 such as <head>, <nav>, <section>, <article>, and <footer> 
+    Each of these new elements has special meaning and rules for its use, where the previously used <div> has very little or no 
+    semantic meaning.
+    ...
+
+
+Adding package.json
+    yarn init 
+    the question must be answered 
+        name: 
+        version:
+        escription:
+        entry point (index.js):
+        repository url...:
+        author:
+        private: 
+
+Adding query 
+    yarn add jquery
+
+Adding popper.js 
+    yarn add popper.js
+
+Adding bootstrap
+    yarn add bootstrap
+
+to install PackageManager
+    yarn install 
+
+
+JavaScripts
+Document Object Mode (DOM)
+
+In this course we will not use var to declear a variable
+var allows the Variables to be hoisted.
+HOISTED:
+    In some propgraming languages the move the variable while compiling to to the top.
+
+We wil use let, and it will prevent from hoisting 
+
+
+
+
+
+Assets 
+fontawesome.com
+fortawesom
+yarn add @fortawesome/fontawesome-free
+
+

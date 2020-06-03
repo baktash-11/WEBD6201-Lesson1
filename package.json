@@ -1,0 +1,15 @@
+{
+  "name": "webd6201-leson1",
+  "version": "1.0.0",
+  "description": "webd6201 - lesson1 example Site",
+  "main": "index.js",
+  "repository": "https://github.com/baktash-11/WEBD6201-Lesson1.git",
+  "author": "Baktash Sana",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
