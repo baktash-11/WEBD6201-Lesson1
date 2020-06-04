@@ -77,6 +77,7 @@ HOISTED:
 
 We wil use let, and it will prevent from hoisting 
 
+Lesson 2 part 1
 
 
 

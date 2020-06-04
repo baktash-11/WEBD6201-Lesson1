@@ -1,30 +1,55 @@
-// IFFE  - Immediately Invoiked Functions Expression 
-//Anonymouse self executing function
+//IIFEE  - Immediately Invoked Function Expression 
+//(function () { })(); IIFE example everything goes bettwen {}
+(function() {
 
-(function () {
     function Start()
     {
-        console.log("App Started....");
+        function mouseOver(){
+            h2.style.fontWeight='bold';
+        }
 
-        let fristHeading = document.getElementById("fristHeading");
-        fristHeading.textContent = "Goodby Crule World!"
-
-        //document.getElementById("fristHeading").textContent="Ya Allah help me!"
-
-        fristHeading.style.fontWeight="bold";
-
-        //getElementsByTagName will return a raay and we will get the frist element of the array
-        let main = document.getElementsByTagName("main")[0];
         
-        //creating html element 
-        //configuring my new element 
-        let newH2 = document.createElement("h2");
-        newH2.setAttribute("class", "Display-5");
-        newH2.textContent = "Alhamdullah We have You"
-        //have to atach it (newH2), as a chiled of element 
+        console.log("%cApp Started ... ", "color:blue; font-size: 25px")
+        //main()
 
-        main.appendChild(newH2);
-    }    
+        //get a reference to the content area
+        let contentArea = document.getElementById("contentArea");
 
-    window.addEventListener("load", Start);
-  })();
+        //create h2 element
+        let h2 = document.createElement("h2");
+        //Add an cclass attribute to h2
+        h2.setAttribute("class","dsiplay-6")
+
+        //append the new node to the contentArea 
+        contentArea.appendChild(h2);
+        h2.textContent="A secondary header"
+
+        //adding anonymos function 
+        h2.addEventListener('click', function () 
+        {
+            h2.style.color=(h2.style.color=="green")? "black" : "green"; //ternary operators
+        });
+        //functions are object in javascript
+        h2.addEventListener('mousemove', mouseOver);
+        //lambda/fat arrwo function 
+        h2.addEventListener('mouseout', ()=> {
+            h2.style.fontWeight='normal'
+        })
+        
+    
+
+    }
+
+   /*  //lambda/fat arrwo function 
+    let main = ()=>{
+            
+    } */
+
+    /* let main = function () {
+        console.log("%c|", "color:green; font-size: 30px")
+        console.log("%cV", "color:green; font-size: 30px")
+        console.log("%cWelcome from let main function", "color:red; font-size: 30px")
+    } */
+
+    window.addEventListener('load', Start)    
+    })();
